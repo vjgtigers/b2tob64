@@ -45,7 +45,6 @@ def b2tob64(new_num):
             str1 = (''.join(i))
             zeroes = (str1+'1').index('1')
             if "1" not in str1:
-                print("no ones in string")
                 zeroes = zeroes - 1
             str1 = int(str1)
             num2 = b2tob64_B_N[str1]
@@ -115,27 +114,18 @@ def b64tob2(str22):
         counter += 1
     return (str33)
 
+import random
+arree = []
+for i in range(1000):
+    str1 = ""
+    len2 = random.randint(1,10000)
+    for e in range(len2):
+        str1 += str(random.randint(0,1))
+    b6 = b2tob64(str1)
+    b2 = b64tob2(b6)
+    if b2 != str1:
+        print("fail")
+        exit()
+    arree.append(len(str1)/len(b6))
 
-
-
-#nowe = time.time()
-#for i in range(1000000):
-#    e12 = (new_new_to(test112))
-#    #print(e12)
-#    e13 = double_away_base(e12)
-#nowe2 = time.time()
-#print(nowe2-nowe)
-#print(e13)
-#if test112 == e13:
-#    print("equal")
-#print(test112)
-#print(e13)
-#e= (new_to(test1))
-#test2 = new_away_base(e)
-#print(test2)
-#if test2 == test1: 
-#    print("worked")
-#else:
-#    print("failed")
-#print(new_to("1010110001001010101010100100110101100010010101010101001001010100001010010101011011010110001001010101"))
-#print(to_base("1010110001001010101010100100110101100010010101010101001001010100001010010101011011010110001001010101"))
+print(sum(arree)/len(arree))
