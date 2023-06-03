@@ -11,7 +11,7 @@ Approx. 6x len reduction
 
 Docs<br>
 function b2tob64 requires a single string input of only 1's and 0's <br>
-This will return a b64 string (NOTE: this can most likely be decoded by this program)<br>
+This will return a b64 string (NOTE: this can most likely be decoded ONLY by this program)<br>
 <br>
 <br>
 <br>
