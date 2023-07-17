@@ -17,3 +17,8 @@ This will return a b64 string (NOTE: this can most likely be decoded ONLY by thi
 <br>
 function b64tob2 requires a single b64 string input created by the b2tob64 function. <br>
 this will return the original binary string.
+<br>
+<br>
+<br>
+Unlike some b2 to b64 converters, this allows for conversions on the bit by bit level. <br>
+Conviance is nice.
